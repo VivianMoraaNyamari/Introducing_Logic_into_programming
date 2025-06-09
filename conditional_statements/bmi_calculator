@@ -1,0 +1,18 @@
+#User to input their BMI
+BMI = input ("please enter your BMI:")
+
+#check if the input is valid number
+if BMI.isdigit():
+    BMI= int(BMI)
+
+    # Determine the BMI category
+    if BMI < 18.5:
+        print("Underweight. ")
+    elif 18.5 <= BMI <= 24.9:
+        print("Normal.")
+    elif 25 <= BMI <= 29.9:
+        print("Overweight.")
+    else:
+        print("Obese. ")
+else:
+    print("Invalid input. Please enter a valid number for your BMI.")

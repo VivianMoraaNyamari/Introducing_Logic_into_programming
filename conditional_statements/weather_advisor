@@ -1,0 +1,14 @@
+# Ask the user for the current season
+season = input("What is the current season? (summer, winter, spring, or autumn): ").strip().lower()
+
+# Recommend an outfit based on the season
+if season == "summer":
+    print("It's summer! Wear light clothes like shorts, a t-shirt, and sandals.")
+elif season == "winter":
+    print("It's winter! Bundle up with a coat, scarf, gloves, and boots.")
+elif season == "spring":
+    print("It's spring! A light jacket and jeans would be perfect.")
+elif season == "autumn":
+    print("It's autumn! Try wearing a sweater, jeans, and comfortable shoes.")
+else:
+    print("Sorry, I didn't recognize that season. Please enter summer, winter, spring, or autumn. ")

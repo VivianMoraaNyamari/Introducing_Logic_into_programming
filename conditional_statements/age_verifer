@@ -1,0 +1,16 @@
+#Ask the user to input their age
+age = input ("Please enter your age: ")
+
+#check if the input is valid number
+if age.isdigit():
+    age= int(age)
+
+    # Recommend resposes based on the age
+    if age < 18:
+        print("You're a minor. ")
+    elif 18 <= age <= 65:
+        print("You're an adult.")
+    else:
+        print("You're a senior. ")
+else:
+    print("Invalid input. Please enter a valid number for your age.")
