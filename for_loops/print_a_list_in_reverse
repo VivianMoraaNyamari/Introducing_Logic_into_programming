@@ -1,0 +1,7 @@
+# Define a sample list
+items = [10, 20, 30, 40, 50]
+
+# Print elements in reverse using a for loop
+print("List in reverse order:")
+for i in range(len(items) - 1, -1, -1):
+    print(items[i])

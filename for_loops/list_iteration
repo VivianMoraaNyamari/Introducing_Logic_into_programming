@@ -1,0 +1,6 @@
+# Define a list of names
+names = ["Alice", "Brian", "Cynthia", "David", "Eva"]
+
+# Iterate through the list and print a welcome message
+for name in names:
+    print(f"Welcome, {name}!")
