@@ -1,0 +1,13 @@
+# Ask the user to input a currency code
+currency = input("Enter a currency code (USD, KES, EUR): ").strip().upper()
+
+# Match currency and print conversion rate (example rates)
+match currency:
+    case "USD":
+        print("1 USD = 135.00 KES")
+    case "KES":
+        print("1 KES = 0.0074 USD")
+    case "EUR":
+        print("1 EUR = 145.00 KES")
+    case _:
+        print("Unsupported currency. Please enter USD, KES, or EUR.")

@@ -1,0 +1,19 @@
+# Ask for a language
+language = input("Enter a language (Swahili, French, English, German, Korea, Chinese): ").strip().capitalize()
+
+# Match and greet in that language
+match language:
+    case "Swahili":
+        print("Hello in Swahili is: Jambo!")
+    case "French":
+        print("Hello in French is: Bonjour!")
+    case "English":
+        print("Hello in English is: Hello!")
+    case "German":
+        print("Hello in German is: Hallo!")
+    case "Korea" | "Korean":
+        print("Hello in Korean is: 안녕하세요 (Annyeonghaseyo)!")
+    case "Chinese":
+        print("Hello in Chinese is: 你好 (Nǐ hǎo)!")
+    case _:
+        print("Sorry, I don't know that language.")
