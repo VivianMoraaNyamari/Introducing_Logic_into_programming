@@ -1,0 +1,15 @@
+# Ask the user to enter a command
+command = input("Enter a command (start, stop, pause, exit): ").strip().lower()
+
+# Interpret the command
+match command:
+    case "start":
+        print("System is starting...")
+    case "stop":
+        print("System is stopping...")
+    case "pause":
+        print("System is paused.")
+    case "exit":
+        print("Exiting the system. Goodbye!")
+    case _:
+        print("Unknown command. Please enter start, stop, pause, or exit.")

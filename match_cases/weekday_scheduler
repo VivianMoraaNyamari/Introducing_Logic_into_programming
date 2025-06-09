@@ -1,0 +1,21 @@
+# Ask the user to enter a day of the week
+day = input("Enter a day of the week (Mon–Sun): ").strip().capitalize()
+
+# Use match-case to provide a message for each day
+match day:
+    case "Mon" | "Monday":
+        print("Start of the week! Stay focused.")
+    case "Tue" | "Tuesday":
+        print("Keep going, it's Tuesday!")
+    case "Wed" | "Wednesday":
+        print("Midweek already—you're doing great!")
+    case "Thu" | "Thursday":
+        print("Almost there. It's Thursday!")
+    case "Fri" | "Friday":
+        print("It's Friday! Finish strong.")
+    case "Sat" | "Saturday":
+        print("Weekend time! Relax and recharge.")
+    case "Sun" | "Sunday":
+        print("Prepare for the week ahead. It's Sunday.")
+    case _:
+        print("Invalid day. Please enter a valid weekday (Mon–Sun).")
