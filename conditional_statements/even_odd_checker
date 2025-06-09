@@ -1,0 +1,14 @@
+# Ask the user to input a number
+number_input = input("Enter a number: ")
+
+# Check if the input is a valid integer
+if number_input.lstrip('-').isdigit():
+    number = int(number_input)
+    
+    # Check if the number is even or odd
+    if number % 2 == 0:
+        print(f"{number} is even.")
+    else:
+        print(f"{number} is odd.")
+else:
+    print("Invalid input. Please enter a valid integer.")
